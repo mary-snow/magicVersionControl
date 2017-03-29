@@ -23,11 +23,11 @@ const deckController = {
       foundId.cards.push(req.body.cardName)
       foundId.save();
     }).then((foundId) => {
-      res.status(200).end()
+      //res.status(200).end()
     })
       .catch((err) => {
         console.log(err);
-        res.status(500).json(err);
+        //res.status(500).json(err);
       })
     
   },
