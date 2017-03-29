@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <h1 id="title"> Magic the Gathering Version Control </h1>
+  <div id="lotsoforms">
+    <form action="/new-deck" method="POST">
+      <input type="text" id="userAction" placeholder="New Deck Title" name="deckName"></input>
+      <button type="submit" id="createDeck"> Create Deck </button>
+    </form>
+    <button id="showCollections" action="/showDecks" onclick="showDecks()">Show Decks</button>
+    <div id="decksList">
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

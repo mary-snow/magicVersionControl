@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <div>
+    <script src="createDeck.js"></script>
+    <h1 id="nameOfDeck"> This is a new Div </h1>
+    <form action="/addCard" method="POST">
+      <input type="text" placeholder="name" name="cardName" id="addCard"></input>
+      <button type="submit" onclick="appendCardDiv()"> Add Card </button>
+    </form>
+    <!--<form action="/removeLastCard" method="POST">-->
+      <button type="submit" id="removeCard" onclick = "removeLastCard()"> Remove Last Added Card </button>
+    <!--</form>-->
+    <div id="cardList"></div>
+  </div>
+</body>
+
+</html>
