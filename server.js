@@ -27,8 +27,7 @@ app.post('/new-deck',deckController.createDeck, (req, res) => {
 
 app.post('/addCard',deckController.addCards)
 
-app.delete('/removeLastCard', deckController.removeLastCard, (req, res) => {
-  console.log("did i go it?")
-  return "wtf";
+app.post('/removeLastCard', deckController.removeLastCard, (req, res) => {
+  res.redirect('/')
 })
 

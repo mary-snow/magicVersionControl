@@ -39,13 +39,15 @@ const deckController = {
   },
 
   removeLastCard(req, res, next){
-    console.log("made it yet?")
+    console.log("im in the remove card controller")
     deck.find({}, (err, result) => {
+      console.log("im inside deck.find in remove card")
       foundCard = result[result.length-1]
-      foundCard.cards.pop();
-      console.log(foundCard.cards)
+      foundCard.remove()
       foundCard.save()
-    })
+    }).then(() =>{
+
+    });
     next();
   }
 

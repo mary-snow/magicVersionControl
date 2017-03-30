@@ -2,7 +2,10 @@
 <html>
 
 <head>
+  <link href="https://fonts.googleapis.com/css?family=MedievalSharp" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
@@ -13,9 +16,9 @@
       <input type="text" placeholder="name" name="cardName" id="addCard"></input>
       <button type="submit" onclick="appendCardDiv()"> Add Card </button>
     </form>
-    <!--<form action="/removeLastCard" method="POST">-->
-      <button type="submit" id="removeCard" onclick = "removeLastCard()"> Remove Last Added Card </button>
-    <!--</form>-->
+    <form action="/removeLastCard" method="POST">
+      <button type="submit" id="removeCard"> Delete Deck </button>
+    </form>
     <div id="cardList"></div>
   </div>
 </body>

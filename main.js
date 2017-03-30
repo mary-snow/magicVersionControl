@@ -12,11 +12,13 @@ function showDecks() {
     let deckTitle = "";
     data.forEach((el) => {
     let newDiv = document.createElement("div")
+    newDiv.className = "titleOfDeck"
     let cards = document.createElement("li")
     console.log(el.cards)
     cards.innerHTML = el.cards
     newDiv.innerHTML =  el.deckName 
-    document.getElementById("decksList").appendChild(newDiv).appendChild(cards)//.innerHTML = deckTitle
+     let anotherDiv = document.getElementById("decksList").appendChild(newDiv)
+     anotherDiv.appendChild(cards)//.innerHTML = deckTitle
     })
   })
 

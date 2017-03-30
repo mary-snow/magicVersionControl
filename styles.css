@@ -1,0 +1,15 @@
+body{
+text-align: right;
+font-family: 'MedievalSharp', cursive;
+font-weight:bold;
+padding-right: 100px;
+background-image: url("http://wallpapercave.com/wp/pF6FYGu.jpg")
+}
+
+.titleOfDeck{
+  font-weight: bolder;
+  font-size: 20px;
+}
+.titleOfDeck li {
+  font-size:14px;
+}

@@ -15,13 +15,9 @@ let newDiv = document.createElement('div')
     })
   });
 
-function removeLastCard(){
-  $.delete
-   document.getElementById("cardList").removeChild(document.getElementById("cardList").lastElementChild)
-}
 
-function appendCardDiv(e) {
-  // e.preventDefault();
+
+function appendCardDiv() {
   console.log("insdie append Card Div", cardsArr)
   let topofList = document.getElementById("cardList")
   let newDiv = document.createElement("div")
